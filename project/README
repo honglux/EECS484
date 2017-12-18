@@ -1,0 +1,36 @@
+----------------------------------------------------------------------------------------------
+Using MNIST and TensorFlow for image bit error tolerant testing and image bit error correction
+----------------------------------------------------------------------------------------------
+
+Author: Honglu Xu
+Project: EECS484 Final Project
+------------------------------
+
+----
+INFO
+----
+This is the class project to use the MNIST and TensorFlow to implement error correction neural networks.
+We have two networks
+1. Auto-associative Memory networks, with the file "memoryEC.py"
+2. Fully Connected networks, with the file "FullyConnectEC.py"
+
+Notice
+------
+The data file path and directory will be needed to be specified in the ".py" file, please specify them manually;
+Or, A very simple way is to put all the data files in the same directory with the ".py" file.
+
+Other Files
+-----------
+"errorWrite.py": Function for generating error files. Will write to the file "temp" every time.
+"mnist.py": Alex's work for reading and ploting MNIST data.
+ "test_5_bit_flip": Test image data with 5 bit flipped for each image.
+ "test_10_bit_flip": Test image data with 10 bit flipped for each image.
+ "test_50_bit_flip": Test image data with 50 bit flipped for each image.
+ "test_100_bit_flip": Test image data with 100 bit flipped for each image.
+ "test_500_bit_flip": Test image data with 500 bit flipped for each image.
+ "train_50_bit_flip": Training image data with 50 bit flipped for each image.
+ 
+---------
+REFERENCE
+---------
+"mnist.py": Alex Kesling, https://gist.github.com/akesling/5358964
